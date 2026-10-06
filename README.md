@@ -75,13 +75,22 @@ Although a Gunn oscillator can be amplitude-modulated with the bias voltage, a s
 
 > **Note:** After tuning the Gunn source, follow the same procedure for VSWR and impedance measurement as for the depth of modulation of the PIN modulator.
 
-## Observation
-
-*(Include your own table relevant to the experiment.)*
 
 ## Calculation
 
-*(Include your own calculation relevant to the experiment.)*
+Negative Differential Resistance (Rn) The dynamic negative resistance is computed across the active region from the threshold point (Vth, Ipeak) to the valley operating point (Vop, Ivalley):
+
+Delta V = Vop - Vth = 8.0 V - 3.4 V = 4.6 V Delta I = Ivalley - Ipeak = 150 mA - 295 mA = -145 mA = -0.145 A
+
+Rn = Delta V / Delta I = 4.6 V / (-0.145 A) = -31.72 Ohms
+
+Peak-to-Valley Current Ratio (PVCR) PVCR = Ipeak / Ivalley = 295 mA / 150 mA = 1.97
+
+Depth of Modulation of PIN Diode
+
+Method A: Decibel Method (from VSWR / Power Meter) Depth of Modulation (dB) = Reading_ON - Reading_OFF Depth of Modulation = 34.2 dB - 18.6 dB = 15.6 dB
+
+Method B: Percentage Modulation Method (from CRO trace) m = [(Vmax - Vmin) / (Vmax + Vmin)] * 100% m = [(1.85 - 0.31) / (1.85 + 0.31)] * 100% m = (1.54 / 2.16) * 100% = 71.30%
 
 ## Precautions
 
@@ -90,5 +99,13 @@ Although a Gunn oscillator can be amplitude-modulated with the bias voltage, a s
 * Take the observations carefully.
 
 ## Conclusion
+
+CONCLUSION The current-voltage (V-I) characteristics of the Gunn diode were studied. The device demonstrated Ohmic behavior up to the threshold voltage Vth = 3.4 V with a peak current Ipeak = 295 mA.
+
+Beyond the threshold, the diode demonstrated the transferred-electron (Gunn) effect, displaying negative differential resistance (Rn = -31.72 Ohms) with a Peak-to-Valley Current Ratio (PVCR) of 1.97.
+
+Stable microwave oscillations were established at the recommended operating bias of Vbias = 8.0 V.
+
+The modulation depth of the PIN diode modulator was determined to be 15.6 dB (or 71.30%), confirming effective square-wave amplitude modulation of the X-band carrier.
 
 *(Write your own.)*
